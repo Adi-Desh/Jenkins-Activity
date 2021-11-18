@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Report') {
             steps {
-                step([$class: 'Publisher'.xml])
+                step([$class: 'Publisher'])
             }
         }
         stage('Post_Actions') {
